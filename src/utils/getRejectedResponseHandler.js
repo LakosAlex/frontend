@@ -1,8 +1,5 @@
 export default function getRejectedResponseHandler({ get, request }) {
 	const handleAuthRedirect = async () => {
-		console.log("entered");
-		console.log(await get(
-			'/api/v1/authorization/config')).data.redirectURL;
 		window.location.href = (await get(
 			'/api/v1/authorization/config')).data.redirectURL;
 	};

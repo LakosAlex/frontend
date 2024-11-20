@@ -1,15 +1,12 @@
 // The Webpack Dev Server uses Express under the hood
 module.exports = function DevServerConfig({ publicPath = '/', apiPath = '/' } = {}) {
 	return {
-		headers: {
-			'Access-Control-Allow-Origin': '*',
-			'Access-Control-Allow-Headers': '*',
-			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
-		},
+		// This rule disables the unsafe eval() security risk during development
+		headers: { 'Content-Security-Policy': "img-src 'self' data: blob:; default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src localhost:*; connect-src 'self' localhost:8080;"},
 		historyApiFallback: { index: publicPath },
 		proxy: {
 			'/api': {
-				target: 'http://vps-5884ed77.vps.ovh.net:8080',
+				target: 'http://localhost:8080',
 				changeOrigin: true,
 				pathRewrite: {
 					'^/api': '/api'
