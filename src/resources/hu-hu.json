@@ -1,0 +1,34 @@
+{
+	"login": {
+		"button": {
+			"user": "Bejelentkezés",
+			"operator": "Operátor panel"
+		},
+		"error": {
+			"401": "A hitelesítés sikertelen. Kérjük, ellenőrizze adatait.",
+			"404": "A hitelesítés sikertelen. A felhasználó nem található."
+		},
+		"input": {
+			"username": "Munkahelyi e-mail" ,
+			"password": "Jelszó" 
+		}
+	}, 
+	"shell": {
+		"pfpMenu": {
+			"profile": "Profil",
+			"language": "Nyelv",
+			"log_out": "Kijelentkezés"
+		},
+		"menu": {
+			"reservations": "Foglalások",
+			"reserve": "Új Foglalás",
+			"list_of_colleagues": "Foglalással rendelkező kollégák",
+			"my_requests": "Saját Kérvényeim",
+			"my_reservations": "Saját Foglalásaim",
+			"requests": "Kérvények",
+			"manage_home_office_requests": "Home Office Kérvények Kezelése",
+			"users": "Felhasználók",
+			"user_profile_management": "Profilok Kezelése"
+		}
+	}
+}

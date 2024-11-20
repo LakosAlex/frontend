@@ -1,0 +1,34 @@
+{
+	"login": {
+		"button": {
+			"user": "Login",
+			"operator": "Operator panel"
+		},
+		"error": {
+			"401": "Authentication failed. Please verify your credentials.",
+			"404": "Authentication failed. User not found."
+		},
+		"input": {
+			"username": "Your work email" ,
+			"password": "Password" 
+		}
+	},
+	"shell": {
+		"pfpMenu": {
+			"profile": "Profile",
+			"language": "Language",
+			"log_out": "Log out"
+		},
+		"menu": {
+			"reservations": "Reservations",
+			"reserve": "Make a Reservation",
+			"list_of_colleagues": "List of Colleagues with Reservations",
+			"my_requests": "My Home Office Requests",
+			"my_reservations": "My reservations",
+			"requests": "Requests",
+			"manage_home_office_requests": "Manage Home Office Requests",
+			"users": "Users",
+			"user_profile_management": "Profile Management"
+		}
+	}
+}
